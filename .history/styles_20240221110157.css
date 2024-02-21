@@ -1,0 +1,38 @@
+.calculator {
+  width: 300px;
+  margin: 100px auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 20px;
+  border: none; /* Remove border to make it cleaner */
+  border-radius: 3px; /* Add a slight border-radius */
+  outline: none; /* Remove default focus outline */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px; /* Add some space between buttons */
+}
+
+button {
+  padding: 15px; /* Increase padding for better touch interaction */
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #f8f9fa; /* Lighter background color */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+  background-color: #e9ecef; /* Darken background color on hover */
+}
